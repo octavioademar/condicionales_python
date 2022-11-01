@@ -52,3 +52,33 @@ llamada:
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+temperatura_1 = float(input("ingrese la temperatura: "))
+temperatura_2 = float(input("ingrese la temperatura dos: "))
+temperatura_3 = float(input("ingrese la temperatura 3: "))
+
+if temperatura_1 > temperatura_2 and temperatura_1 > temperatura_3:
+    temperatura_max = temperatura_1
+elif temperatura_2 > temperatura_1 and temperatura_2 > temperatura_3:
+    temperatura_max = temperatura_2
+elif temperatura_3 > temperatura_1 and temperatura_3 > temperatura_2:
+    temperatura_max = temperatura_3
+else:
+    print("Ingrese diferentes temperaturas")
+
+if temperatura_1 < temperatura_2 and temperatura_1 < temperatura_3:
+    temperatura_min = temperatura_1
+elif temperatura_2 < temperatura_1 and temperatura_2 < temperatura_3:
+    temperatura_min = temperatura_2
+elif temperatura_3 < temperatura_1 and temperatura_3 < temperatura_2:
+    temperatura_min = temperatura_3
+else:
+    print("Ingrese diferentes tipos de termperaturas")
+
+temperatura_promedio = ((temperatura_1 + temperatura_2 + temperatura_3) / 3)
+
+print (f'Temperatura maxima: {temperatura_max} \nTemperatura minima: {temperatura_min}')
+print (f'Temperatura promedio: {temperatura_promedio} \n ')
+
+
+
