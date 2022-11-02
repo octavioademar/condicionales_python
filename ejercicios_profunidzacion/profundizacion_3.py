@@ -63,3 +63,40 @@ pregunta_5 = "¿Cuál es la capital de Venezuela?"
 respuesta_5 = "caracas"
 
 # Empezar aquí la resolución del ejercicio
+
+primera_respuesta = input(f'Pregunta numero 1:{pregunta_1} ').lower()
+if primera_respuesta == respuesta_1:
+    print ('Respuesta correcta, ganaste 10 puntos')
+    puntaje += 10
+else:
+    print ('Respuesta incorrecta')
+
+segunda_respuesta = input(f'Pregunta numero 2:{pregunta_2} ').lower()
+if segunda_respuesta == respuesta_2:
+    print ('Respuesta correcta, ganaste 10 puntos')
+    puntaje += 10
+else:
+    print ('Respuesta incorrecta')
+
+tercera_respuesta = input(f'Pregunta numero 3 {pregunta_3} ').lower()
+if tercera_respuesta == respuesta_3:
+    print ("La respuesta es correcta, ganaste 10 puntos")
+    puntaje += 10
+else:
+    print ("La respeusta es incorrecta")
+
+cuarta_respuesta = input(f'Pregunta numero 4 {pregunta_4} ').lower()
+if cuarta_respuesta == respuesta_4:
+    print("Respuesta correcta, ganaste 10 puntos")
+    puntaje += 10
+else:
+    print ("Resputa incorrecta")
+
+quinta_respuesta = input(f'Pregunta numero 5 {pregunta_5} ').lower()
+if quinta_respuesta == respuesta_5:
+    print ("La respuesta es correcta, ganaste 10 puntos")
+    puntaje += 10
+else:
+    print ("La respuesta es incorrecta")
+
+print ("el puntaje final es: ", puntaje)
